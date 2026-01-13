@@ -11,7 +11,7 @@ const Tour = ({ id, name, image, price, info, removeTour }) => {
       <h4>₹{price}</h4>
 
       
-      <p>
+      <p id={`tour-item-para-${id}`}>
         {readMore ? info : `${info.substring(0, 200)}...`}
 
         {!readMore && (
@@ -22,6 +22,8 @@ const Tour = ({ id, name, image, price, info, removeTour }) => {
             Show More
           </button>
         )}
+
+        
 
         {readMore && (
           <button
