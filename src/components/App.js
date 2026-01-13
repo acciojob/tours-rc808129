@@ -49,7 +49,7 @@ const [tours, setTours] = useState([]);
 
 
     return(
-       <div>
+       <div id="main">
       <Tours tours={tours} removeTour={removeTour} />
     </div>
      
