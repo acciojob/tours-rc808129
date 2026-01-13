@@ -3,7 +3,7 @@ import React from "react";
 import Tour from "./Tour";
 
 
-const Tours = ({tours})=>{
+const Tours = ({tours,removeTour})=>{
 
   
 
@@ -12,6 +12,7 @@ const Tours = ({tours})=>{
     {tours.map((tour)=>(
       <Tour key={tour.id}
       {...tour}
+      removeTour={removeTour}
       />
     ))}
 
